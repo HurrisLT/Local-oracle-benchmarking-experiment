@@ -1,0 +1,5 @@
+config located in dockerfile
+
+docker build -t my-go-app .
+docker run -p 8080:8081 -itd --network=chaincodedockerdevmode_vdtest  my-go-app
+docker network inspect chaincodedockerdevmode_vdtest
